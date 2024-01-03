@@ -4,7 +4,7 @@ This is my first project ever using frontend tech.
 ## About
 It's a simple blog with a recollection of personal experiences playing Gran Turismo 4, one of my favourite console games. It has some features:
 * The site displays a tabular information about different events of the game.
-* You can zoom a picture just by clicking/tapping it.
+* You can zoom a car's picture just by clicking/tapping it.
 * Some sections have animations but they are optional.
 * The last section offers a different style that I considered to be according to its theme.
 
