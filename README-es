@@ -1,0 +1,15 @@
+<h1 align="center">Gran Turismo 4 Blog</h1>
+Este es mi primer proyecto usando tecnología frontend.
+
+## Acerca de
+Es un simple blog con una recolección de experiencias personales jugando al Gran Turismo 4, uno de mis juegos de consola favoritos. Tiene algunas características: 
+* El sitio muestra en forma de tablas información acerca de los diferentes eventos que hay en el juego.
+* Se puede hacer zoom en las imágenes de los autos simplemente con un click/tap.
+* Algunas secciones ofrecen algo de animación pero es opcional.
+* La última sección ofrece un estilo diferente, el cual consideré apropiado para la temática que trata.
+
+## Tecnologías usadas
+
+![Static Badge](https://img.shields.io/badge/HTML5-%23000?style=for-the-badge&logo=html5&logoColor=%23fff&labelColor=%23E34F26)
+![Static Badge](https://img.shields.io/badge/CSS3-%23000?style=for-the-badge&logo=css3&logoColor=%23fff&labelColor=%231572B6)
+![Static Badge](https://img.shields.io/badge/JavaScript-%23000?style=for-the-badge&logo=javascript&logoColor=%23fff&labelColor=%23F7DF1E)
