@@ -1,0 +1,780 @@
+/* ********** CUSTOM PROPERTIES **********  */
+
+:root {
+  --main-font: sans-serif;
+  --font-size: 16px;
+  --main-color: #364552;
+  --bg-first-place-color: #ffd700;
+  --bg-second-place-color: #c0c0c0;
+  --bg-third-place-color: #cd7f32;
+  --bg-no-trophy-color: #add8e6;
+}
+
+/* ********** RESET CSS **********  */
+
+html {
+  box-sizing: border-box;
+  font-family: var(--main-font);
+  font-size: var(--font-size);
+  overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ********** LOCAL FONTS **********  */
+
+@font-face {
+  font-family: "Star7";
+  src: url("../assets/STAR7.ttf") format("truetype");
+}
+
+/* ********** COMPONENTS **********  */
+
+body {
+  margin: 0;
+  background-color: #f4d8bb;
+}
+
+/* ***** Header ***** */
+
+header {
+  top: 0;
+  background-color: var(--main-color);
+  color: white;
+  padding: 2rem;
+}
+
+header h1 {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.menu {
+  padding: 1rem;
+  background-color: #222;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li a {
+  display: block;
+  font-family: "Play", sans-serif;
+  font-size: 1.3rem;
+  color: #ddd;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.menu li a:hover {
+  transition: all 0.3s ease;
+  background-color: #ff6347;
+  color: #fff;
+}
+
+/* ***** Main ***** */
+
+main p {
+  padding: 1rem;
+}
+
+blockquote {
+  padding: 1rem;
+  background-color: var(--main-color);
+  color: #fff;
+  font-weight: 600;
+}
+
+.cover img,
+.banner img {
+  width: 75%;
+}
+
+.logo img {
+  width: 75%;
+  background-color: #fff;
+}
+
+.container {
+  padding: 0.25rem 0;
+  text-align: center;
+}
+
+.nav-bottom {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination a {
+  margin: 0 5px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #fff;
+  color: #2e8bc0;
+  font-weight: bold;
+}
+
+.pagination a.no-link {
+  background-color: #ebebe4;
+  color: #222;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.pagination a:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.pagination .active {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+/* *** Cars and Track Info *** */
+
+.table-container {
+  margin: 10px;
+  border: medium solid black;
+  background-color: #fff;
+}
+
+.table-container p {
+  font-weight: bold;
+}
+
+.table-header {
+  font-family: "Play", sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  background-color: #284178;
+  color: #fff;
+}
+
+.car-image {
+  width: 100%;
+}
+
+.car-image img {
+  width: 100%;
+}
+
+.thumbnail {
+  cursor: pointer;
+}
+
+.main-table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+tr > * {
+  border: thin solid black;
+  font-weight: bold;
+}
+
+td {
+  padding: 1rem;
+}
+
+.track {
+  width: 400px;
+}
+
+.impressions p {
+  margin: auto;
+  padding: 1rem;
+}
+
+.long-paragraph-fgt {
+  height: 110vh;
+  overflow-y: scroll;
+}
+
+.impressions-fgt {
+  text-align: start;
+}
+
+.impressions-fgt u {
+  color: green;
+}
+
+/* ***** Footer ***** */
+
+.footer {
+  width: 100%;
+  background-color: #0a141d;
+}
+
+.footer .group-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  padding: 45px 0;
+}
+
+.footer .group-1 .box figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .group-1 .box figure img {
+  width: 225px;
+}
+
+.footer .group-1 .box h2 {
+  margin-bottom: 25px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.footer .group-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+
+.footer .group-1 .social-network a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+.footer .group-1 .social-network a:hover {
+  color: #00ffff;
+}
+
+.footer .group-2 {
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer .group-2 small {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 700px) {
+  .footer .group-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding: 35px 0;
+    text-align: center;
+  }
+}
+
+/* ***** Modal Window ***** */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  /* width: 75%; */
+  max-height: 80%;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+.out {
+  animation-name: zoom-out;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.4);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoom-out {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .modal-content {
+    width: 50%;
+  }
+}
+
+/* ***** Background Classes for Tables ***** */
+
+.track {
+  background-color: #c4b4fa;
+}
+
+.points {
+  background-color: #ddd;
+}
+
+.points.first-place {
+  background-color: var(--bg-first-place-color);
+}
+
+.points.second-place {
+  background-color: var(--bg-second-place-color);
+  color: #f00;
+}
+
+.points.third-place {
+  background-color: var(--bg-third-place-color);
+  color: #f00;
+}
+
+.points.no-trophy {
+  background-color: var(--bg-no-trophy-color);
+  color: #f00;
+}
+
+.usa {
+  background-color: #782828;
+}
+
+.japan {
+  background-color: #f00;
+}
+
+.europe {
+  background-color: #0d6efd;
+  color: yellow;
+}
+
+.extreme {
+  background-color: #f00;
+  color: #000;
+}
+
+/* ***** Hero Images: Event Backgrounds ***** */
+
+.hero-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.usa-flag {
+  background-image: linear-gradient(
+      rgba(128, 128, 128, 0.9),
+      rgba(128, 128, 128, 0.9)
+    ),
+    url("../img/flags/United_States_Flag.jpg");
+}
+
+.japan-flag {
+  background-image: linear-gradient(
+      rgba(128, 128, 128, 0.9),
+      rgba(128, 128, 128, 0.9)
+    ),
+    url("../img/flags/Japan_Flag.jpg");
+}
+
+.europe-flag {
+  background-image: linear-gradient(
+      rgba(128, 128, 128, 0.9),
+      rgba(128, 128, 128, 0.9)
+    ),
+    url("../img/flags/European_Union_flag.jpg");
+}
+
+.professional-bg {
+  background-color: rgba(0, 68, 255, 0.5);
+}
+
+.extreme-bg {
+  background-color: rgb(27, 1, 1);
+}
+
+/* ***** Animation Button ***** */
+
+.toggle-container {
+  padding: 1rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  background-color: #d1d3d4;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.switch::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #fff;
+  top: 5px;
+  left: 5px;
+  transition: all 0.4s;
+}
+
+input[type="checkbox"]:checked + .switch::after {
+  transform: translateX(40px);
+}
+
+input[type="checkbox"]:checked + .switch {
+  background-color: #00e359;
+}
+
+.offscreen {
+  display: none;
+}
+
+/* **********     ANIMATIONS     ********** */
+
+/*Logo*/
+
+.prof-logo-anim {
+  animation: logo 2s ease-in-out infinite;
+}
+
+@keyframes logo {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.shaky-anim {
+  animation: shake 2.5s ease infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  1.78571% {
+    transform: translate(5px, 0);
+  }
+  3.57143% {
+    transform: translate(0, 0);
+  }
+  5.35714% {
+    transform: translate(5px, 0);
+  }
+  7.14286% {
+    transform: translate(0, 0);
+  }
+  8.92857% {
+    transform: translate(5px, 0);
+  }
+  10.71429% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/*Headers*/
+
+.prof-anim {
+  animation: text 2s linear infinite;
+}
+
+@keyframes text {
+  50% {
+    background-color: #000;
+    color: #daa520;
+  }
+}
+
+.gt-world {
+  border: medium solid #f00;
+}
+
+.gt-wc {
+  position: relative;
+}
+
+.gt-wc::before,
+.gt-wc::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(
+    45deg,
+    #ff3300,
+    #ff6600,
+    #e6fb04,
+    #00ff66,
+    #00ffff,
+    #099fff,
+    #6e0dd0,
+    #ff0099,
+    #ff00ff
+  );
+  background-size: 400%;
+  width: calc(100% + 5px);
+  height: calc(100% + 5px);
+  z-index: -1;
+  animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.gt-wc::after {
+  filter: blur(30px);
+}
+
+/*Extreme League*/
+
+.gt-ex-logo {
+  animation: logo-ex 2s ease-in-out infinite;
+}
+
+@keyframes logo-ex {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.8);
+    filter: invert();
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*Extreme League: Gran Turismo All Stars*/
+
+.extreme-headers > span {
+  -webkit-text-stroke: 1.5px rgb(0, 0, 0, 0.5);
+  font-family: "Star7", Verdana, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-image: linear-gradient(
+    to right,
+    #ff0000 0,
+    #ffa500 22%,
+    #ffff00 35%,
+    #008000 45%,
+    #0000ff 55%,
+    #4b0082 78%,
+    #ee82ee 90%,
+    #ff0000 95% 100%
+  );
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: animatedGradient 3s linear infinite;
+}
+
+@keyframes animatedGradient {
+  to {
+    background-position: -200% center;
+  }
+}
+
+/* **********     MEDIA QUERIES     ********** */
+
+@media only screen and (min-width: 992px) {
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .cover img {
+    width: 60%;
+  }
+
+  .logo img {
+    width: 20%;
+  }
+
+  .banner img {
+    width: 25%;
+    border: thin solid black;
+  }
+
+  .table-container {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-areas:
+      "car-header track-header impressions-header"
+      "car-image track-points notes";
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 45px auto;
+    box-shadow: 0 0 30px #333;
+  }
+
+  .table-container table {
+    margin: 0 auto auto auto;
+  }
+
+  .car-header {
+    grid-area: car-header;
+  }
+
+  .track-header {
+    grid-area: track-header;
+    max-height: 150px;
+  }
+
+  .impressions-header {
+    grid-area: impressions-header;
+  }
+
+  .car-image {
+    grid-area: car-image;
+    width: 100%;
+    border-right: medium solid black;
+  }
+
+  .car-image img {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+  }
+
+  .main-table {
+    grid-area: track-points;
+    margin: auto;
+    max-height: 45px;
+  }
+
+  .impressions {
+    grid-area: notes;
+    border-left: medium solid black;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .long-paragraph {
+    height: 50vh;
+    overflow-y: scroll;
+  }
+
+  .long-paragraph-ex {
+    height: 70vh;
+    overflow-y: scroll;
+  }
+
+  .extreme-headers > span {
+    font-size: 2rem;
+  }
+}
